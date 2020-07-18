@@ -12,6 +12,7 @@ font-size:29;
 transition:.2s;
 outline:none;
 border-radius:4px;
+ box-shadow: 2px 2px 5px gray;
 }
 .buton:hover{
 background:#0300cc;
@@ -20,19 +21,68 @@ cursor:pointer;
 .buton:active{
 background:red;
 }
+#imagine{
+transition:.3s;
+ box-shadow: 10px 10px 5px gray;
+}
+#imagine:hover{
+transform:scale(1.1);
+}
+#nume{
+font-family:Verdana;
+color:#1f1f1b;
+font-size:25;
+}
+a{
+text-decoration:none;
+}
+
+.stanga{
+
+ 
+  float:left;
+  width:20%;
+}
+.centru{
+
+  padding:1px;
+  float:left;
+  width:60%;
+}
+.dreapta{
+  padding:1px;
+  float:left;
+  width:19%;
+}
+.sageata{
+margin-top:75%;
+width:100%
+}
+#aa{
+  transform: rotate(180deg);
+}
+
 </style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body bgcolor="#a69463">
+<body bgcolor="#f0ffff">
 
+<div class="stanga">
+<img class="sageata" src="sageata.gif">
 
+</div>
+<div class="centru" >
 <center>
-<div>
 <input class="buton" type="button" value="Start" onclick="main()">
 <br><br>
-<p id="nume"></p>
-<a href="#" target="_blank" id="lin"><img width="300px" height="200px" id="imagine" src="a.png"></a>
-</div>
+<a href="#" target="_blank" id="lin"> <b><p  id="nume"></p></b></a>
+<a href="#" target="_blank" id="lin"><img width="75%" height="50%" id="imagine" src="a.png"></a>
 </center>
+</div>
+<div class="dreapta">
+
+<img class="sageata" id="aa" src="sageata.gif">
+</div>
 
 
 <script>
